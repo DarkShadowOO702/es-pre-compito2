@@ -1,0 +1,6 @@
+Data,a,b,Operazione,Opzioni,Risultato,Esito,Errori
+"12/11/2026 08:29:56",2,2,somma,,4,OK," -  - "
+"12/11/2026 08:30:02",2,2,somma,,4,OK," -  - "
+"12/11/2026 08:30:22",2,2,somma,valore_assoluto,4,OK," -  - "
+"12/11/2026 08:30:26",2,2,somma,"valore_assoluto, quadrato",16,OK," -  - "
+"12/11/2026 08:30:34",2,2,somma,arrotondamento,4,OK," -  - "

@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Titolo principale */
+h1 {
+    color: #1e293b;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Contenitore Form */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+/* Etichette e campi di testo */
+form > label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #334155;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Nasconde i <br> superflui nel form per gestire gli spazi col CSS */
+form br {
+    display: none;
+}
+
+/* Fieldset per Operazioni e Opzioni */
+fieldset {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0;
+    background-color: #f8fafc;
+}
+
+legend {
+    font-weight: 600;
+    color: #475569;
+    padding: 0 8px;
+    font-size: 0.95rem;
+}
+
+/* Radio button e Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+fieldset label {
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Pulsante Calcola */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+/* Messaggi di errore */
+.errore {
+    color: #dc2626;
+    background-color: #fef2f2;
+    border-left: 3px solid #dc2626;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Box Risultato */
+.risultato {
+    background-color: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    border-left: 5px solid #10b981;
+    border-radius: 8px;
+    padding: 20px 25px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.risultato h2 {
+    color: #065f46;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a7f3d0;
+    padding-bottom: 5px;
+}
+
+.risultato p {
+    margin: 5px 0;
+    color: #064e3b;
+}
+
+.risultato p:last-child {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Tabella Storico */
+table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: none; /* Sovrascrive border='1' dell'HTML */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #1e293b;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+}
